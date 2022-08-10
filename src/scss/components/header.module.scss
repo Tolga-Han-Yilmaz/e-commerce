@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: $AICELAND1-hex;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    padding: 1rem;
+    .col {
+      grid-column: span 4;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .header-contact {
+      display: flex;
+      justify-content: flex-end;
+      .header-contact--number {
+        display: none;
+      }
+    }
+  }
+  .icon {
+  }
+}
