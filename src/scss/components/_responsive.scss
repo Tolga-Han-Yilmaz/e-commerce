@@ -110,6 +110,18 @@
       }
     }
   }
+  .checkout {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      .checkout-cart {
+        grid-column: span 6;
+      }
+      .form {
+        grid-column: span 6;
+      }
+    }
+  }
 }
 @include media-lg {
   .nav {
@@ -146,6 +158,27 @@
         button {
           position: absolute;
           bottom: 0;
+        }
+      }
+    }
+  }
+  .checkout {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      .checkout-cart {
+        grid-column: span 5;
+      }
+      .form {
+        grid-column: span 7;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+        div {
+          grid-column: span 6;
+        }
+        div:nth-child(8) {
+          grid-column: span 12;
         }
       }
     }

@@ -184,6 +184,10 @@ const Footer = () => {
         <FaYoutube className="icon" />
         <FaPinterestP className="icon" />
       </div>
+      <h5>
+        &copy; {new Date().getFullYear()}
+        <span> Tolga Han YILMAZ</span>
+      </h5>
     </footer>
   );
 };

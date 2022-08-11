@@ -1,15 +1,24 @@
 import { FaStoreAlt, FaBookOpen, FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
       <div className="container">
         <div className="header-stores col">
           <FaStoreAlt className="icon" />
-          <h4>Stores</h4>
+          <h4>
+            <Link to="/" className="link">
+              Stores
+            </Link>
+          </h4>
         </div>
         <div className="header-catalog col">
           <FaBookOpen className="icon" />
-          <h4>Catalog</h4>
+          <h4>
+            <Link to="/checkout" className="link">
+              Checkout
+            </Link>
+          </h4>
         </div>
 
         <div className="header-contact col">

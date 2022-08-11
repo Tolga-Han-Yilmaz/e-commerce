@@ -1,8 +1,8 @@
-import React from "react";
-
+import { FaShopify } from "react-icons/fa";
 const Checkout = () => {
   return (
     <div className="checkout">
+      <h1>Checkout</h1>
       <div className="container">
         <div className="checkout-cart col">
           <h3>Shopping Cart Summary</h3>
@@ -12,7 +12,7 @@ const Checkout = () => {
               alt=""
             />
             <div className="cart-info">
-              <h5>An apple mobile which is nothing like apple</h5>
+              <p>An apple mobile which is nothing like apple</p>
               <div className="button">
                 <button>+</button>
                 <span>1</span> <button>-</button>
@@ -25,10 +25,10 @@ const Checkout = () => {
               alt=""
             />
             <div className="cart-info">
-              <h5>
+              <p>
                 "SIM-Free, Model A19211 6.5-inch Super Retina HD display with
                 OLED technology A12 Bionic chip with ..."
-              </h5>
+              </p>
               <div className="button">
                 <button>+</button>
                 <span>1</span> <button>-</button>
@@ -51,6 +51,9 @@ const Checkout = () => {
           </div>
         </div>
         <div className="form col">
+          <h3>
+            <FaShopify /> Shipping Details
+          </h3>
           <div>
             <label htmlFor="first">First Name*</label>
             <br />
@@ -102,12 +105,20 @@ const Checkout = () => {
             </select>
           </div>
           <div>
+            <label htmlFor="city">District*</label>
+            <br />
+            <select id="city" disabled>
+              <option value="06">Please Selcet</option>
+              <option value="40">Kırşehir</option>
+              <option value="34">İstanbul</option>
+              <option value="45">Manisa</option>
+            </select>
+          </div>
+          <div>
             <label htmlFor="address">Address*</label>
             <br />
             <textarea
-              id=""
-              cols="60"
-              rows="10"
+              id="address"
               required
               placeholder="Enter neighborhood"
             ></textarea>

@@ -13,6 +13,12 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      h4 {
+        .link {
+          text-decoration: none;
+          color: $text3-hex;
+        }
+      }
     }
     .header-contact {
       display: flex;
