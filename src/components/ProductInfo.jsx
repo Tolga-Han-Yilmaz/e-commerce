@@ -6,7 +6,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const ProductInfo = () => {
   const { products } = useProductContext();
   const [index, setIndex] = useState(0);
-
   const checkNumber = (number) => {
     if (number > products.length - 1) {
       return 0;
@@ -35,9 +34,11 @@ const ProductInfo = () => {
         <FaChevronLeft className="icon col" onClick={handleLeft} />
         <div className="productinfo-img col">
           <img src={products[index]?.thumbnail} alt={products[index]?.title} />
-          <h3>{products[index]?.title}</h3>
-          <p>{products[index]?.description}</p>
-          <button>SHOP NOW</button>
+          <div>
+            <h3>{products[index]?.title}</h3>
+            <p>{products[index]?.description}</p>
+            <button>SHOP NOW</button>
+          </div>
         </div>
         <FaChevronRight className="col icon" onClick={handleRight} />
       </div>

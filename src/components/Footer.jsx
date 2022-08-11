@@ -1,8 +1,14 @@
 import React from "react";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+  FaPinterestP,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div>
+    <footer className="footer">
       <div className="accordion" id="accordionPanelsStayOpenExample">
         <div className="accordion-item">
           <h2 className="accordion-header" id="panelsStayOpen-headingOne">
@@ -101,7 +107,7 @@ const Footer = () => {
             aria-labelledby="panelsStayOpen-headingFour"
           >
             <div className="accordion-body">
-              <p>FAQ</p>
+              <p p>FAQ</p>
               <p>Contact center</p>
             </div>
           </div>
@@ -132,7 +138,53 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+      <div className="container">
+        <div className="corporate col">
+          <h4>CORPORATE</h4>
+          <p>About us</p>
+          <p>Press</p>
+          <p>Human resources</p>
+          <p>News from us</p>
+        </div>
+        <div className="shopping col">
+          <h4>SHOPPING</h4>
+          <p>OrderAnd Payment</p>
+          <p>Cancellation and Refund</p>
+          <p>Delivery Conditions</p>
+          <p>Secure shopping</p>
+        </div>
+        <div className="legal col">
+          <h4>LEGAL</h4>
+          <p>Terms of Use</p>
+          <p>Privacy Policy</p>
+          <p>Membership Agreement</p>
+          <p>Distance Selling Contract</p>
+        </div>
+        <div className="help col">
+          <h4>HELP CENTER</h4>
+          <p>FAQ</p>
+          <p>Contact center</p>
+        </div>
+        <div className="contact col">
+          <h4>CONTACT US</h4>
+          <p>Turkey</p>
+          <p>123456789</p>
+          <p>06thy40@gmail.com</p>
+        </div>
+        <div className="footer-icon col">
+          <FaFacebookF className="icon" />
+          <FaTwitter className="icon" />
+          <FaYoutube className="icon" />
+          <FaPinterestP className="icon" />
+        </div>
+      </div>
+      <div className="footer--icon">
+        <FaFacebookF className="icon" />
+        <FaTwitter className="icon" />
+        <FaYoutube className="icon" />
+        <FaPinterestP className="icon" />
+      </div>
+    </footer>
   );
 };
 

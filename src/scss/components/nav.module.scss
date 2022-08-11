@@ -8,10 +8,10 @@
     padding: 1rem;
     grid-template-columns: repeat(12, 1fr);
 
-    .col {
+    .div-icon {
       grid-column: span 4;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       gap: 2.5rem;
     }
@@ -19,12 +19,16 @@
       display: flex;
       width: 100%;
       grid-column: span 8;
+      h1 {
+        color: $text2-hex;
+        margin-right: 2rem;
+      }
       input[type="text"] {
         padding: 0.5rem;
         font-size: 0.8rem;
         border: 1px solid $text2-hex;
         border-radius: 0.5rem 0 0 0.5rem;
-        border: none;
+        border: 1px solid $text2-hex;
         float: left;
         width: 80%;
         background: $text4-hex;
@@ -44,19 +48,37 @@
         cursor: pointer;
       }
     }
-    .d-flex {
-      display: block;
-    }
+
     .d-none {
       display: none;
     }
-    ul {
+    .ul {
+      display: flex;
+      flex-direction: column;
       grid-column: span 12;
+
       li {
-        color: $text2-hex;
+        color: $AICELAND3-hex;
         list-style: none;
         cursor: pointer;
         margin-top: 0.5rem;
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: 600;
+      }
+    }
+    .md-ul {
+      display: none;
+      grid-column: span 12;
+      gap: 1.5rem;
+      li {
+        color: $AICELAND3-hex;
+        list-style: none;
+        cursor: pointer;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        font-size: large;
+        font-weight: 600;
         &:hover {
         }
       }
@@ -65,5 +87,6 @@
   .icon {
     color: $text2-hex;
     font-size: 1.4rem;
+    cursor: pointer;
   }
 }

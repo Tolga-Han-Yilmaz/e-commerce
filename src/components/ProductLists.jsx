@@ -16,7 +16,7 @@ const ProductLists = () => {
               <img src={product.thumbnail} alt={product.title} />
               <h4>{product.title}</h4>
               <p>{product.description}</p>
-              <h5>{product.price}</h5>
+              <h5>{product.price} $</h5>
               <button>
                 <FaShoppingBasket className="icon" />
                 ADD

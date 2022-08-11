@@ -18,7 +18,12 @@ const Nav = () => {
           <FaShoppingBasket className="icon " />
           <FaStream className="icon" onClick={() => setIsShow(!isShow)} />
         </div>
-        <ul className={isShow ? "d-flex" : "d-none"}>
+        <ul className={isShow ? "ul" : "d-none "}>
+          {categories.map((category, id) => {
+            return <li key={id}>{category}</li>;
+          })}
+        </ul>
+        <ul className="md-ul">
           {categories.map((category, id) => {
             return <li key={id}>{category}</li>;
           })}
