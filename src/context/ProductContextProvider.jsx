@@ -18,7 +18,6 @@ const ProductContextProvider = ({ children }) => {
       .then((res) => res.json())
       .then((data) => setProducts(data.products));
   }, []);
-  // console.log(products);
 
   // product categories
   const c = products.map((product) => product.category);
