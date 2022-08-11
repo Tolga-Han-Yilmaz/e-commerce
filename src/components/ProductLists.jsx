@@ -1,6 +1,6 @@
 import React from "react";
 import { useProductContext } from "../context/ProductContextProvider";
-import { FaSearch, FaShoppingBasket, FaStream } from "react-icons/fa";
+import { FaShoppingBasket } from "react-icons/fa";
 
 const ProductLists = () => {
   const { products } = useProductContext();

@@ -9,12 +9,8 @@
     margin-bottom: 1rem;
   }
   .container {
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
     gap: 2rem;
-    .col {
-      //   grid-column: span 12;
-    }
+
     .checkout-cart {
       display: flex;
       flex-direction: column;
